@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            width:100%;
+            height: 100vh;
+        }   
+        
+        .hero p{
+            padding-left: 12px;
+        }
+
+        .copy{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .features{
+            padding-left: 12px;
+            position: absolute;
+            top: 45%;
+            color: #ffffff;
+        }
+
+        .contact{
+            padding-left: 12px;
+            position: absolute;
+            top: 65%;
+            color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h1>Welcome to my landing page</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla, sapien vel molestie luctus, urna arcu congue lorem, id vulputate quam mauris sit amet metus.</p>
+			<button>Get Started</button>
+		</section>
+		<section class="features">
+			<h2>Features</h2>
+			<ul>
+				<li><i class="fas fa-check"></i> Feature 1</li>
+				<li><i class="fas fa-check"></i> Feature 2</li>
+				<li><i class="fas fa-check"></i> Feature 3</li>
+				<li><i class="fas fa-check"></i> Feature 4</li>
+			</ul>
+		</section>
+		<section class="contact">
+			<br><h2>Contact Us</h2>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="message">Message</label>
+				<textarea id="message" name="message"></textarea><br><br>
+				<button>Submit</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p class="copy">&copy; 2023 My Landing Page</p>
+	</footer>
+</body>
+</html>
